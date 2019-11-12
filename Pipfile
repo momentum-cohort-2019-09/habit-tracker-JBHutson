@@ -11,6 +11,8 @@ prospector = "*"
 django = ">=2.2"
 django-debug-toolbar = "*"
 django-registration-redux = "*"
+djangorestframework = "*"
+httpie = "*"
 
 [requires]
 python_version = "3.7"

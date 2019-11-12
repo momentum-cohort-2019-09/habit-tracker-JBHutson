@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Created
+    'core',
+
     # Third-party
     'registration',
 
@@ -44,9 +47,6 @@ INSTALLED_APPS = [
 
     # Third-party
     'debug_toolbar',
-
-    # Created
-    'core',
 ]
 
 MIDDLEWARE = [
@@ -133,8 +133,10 @@ INTERNAL_IPS = [
 
 # Registration
 
+REGISTRATION_OPEN = True
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
 LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/accounts/login/'
 
 AUTH_USER_MODEL = 'core.User'

@@ -1,2 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
 
+{% block meta %}
+<script src="{% static 'profile.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+{{ user | json_script:'username'}}
+<p id=profile></p>
+<div id=usersFollowing>
+    <p>Users Following</p>
+</div>
+{% endblock %}
